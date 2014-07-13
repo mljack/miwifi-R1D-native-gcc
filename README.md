@@ -1,5 +1,6 @@
 Inspired by:
 * http://bbs.xiaomi.cn/t-9865702
+* https://github.com/comcat/miwifi
 
 Based on:
 * uClibc-0.9.33.2
