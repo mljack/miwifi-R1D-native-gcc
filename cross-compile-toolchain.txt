@@ -1,0 +1,387 @@
+gcc 4.8.2
+uClibc-0.9.33.2
+
+===========================================================================
+
+工具链中gcc的信息：
+
+COLLECT_GCC=arm-xiaomi-linux-uclibcgnueabi-gcc
+
+
+COLLECT_LTO_WRAPPER=/opt/arm-xiaomi-linux-uclibcgnueabi/bin/../libexec/gcc/arm-xiaomi-linux-uclibcgnueabi/4.8.2/lto-wrapper
+
+
+Target: arm-xiaomi-linux-uclibcgnueabi
+
+
+Configured with: /home/lijiqi/crossng/xq/.build/src/gcc-linaro-4.8-2013.06-1/configure --build=i686-build_pc-linux-gnu --host=i686-build_pc-linux-gnu --target=arm-xiaomi-linux-uclibcgnueabi --prefix=/home/lijiqi/x-tools/arm-xiaomi-linux-uclibcgnueabi --with-sysroot=/home/lijiqi/x-tools/arm-xiaomi-linux-uclibcgnueabi/arm-xiaomi-linux-uclibcgnueabi/sysroot --enable-languages=c,c++ --with-arch=armv7-a --with-cpu=cortex-a9 --with-tune=cortex-a9 --with-float=soft --with-pkgversion='crosstool-NG 1.19.0' --enable-__cxa_atexit --disable-libmudflap --disable-libgomp --disable-libssp --disable-libquadmath --disable-libquadmath-support --with-gmp=/home/lijiqi/crossng/xq/.build/arm-xiaomi-linux-uclibcgnueabi/buildtools --with-mpfr=/home/lijiqi/crossng/xq/.build/arm-xiaomi-linux-uclibcgnueabi/buildtools --with-mpc=/home/lijiqi/crossng/xq/.build/arm-xiaomi-linux-uclibcgnueabi/buildtools --with-isl=/home/lijiqi/crossng/xq/.build/arm-xiaomi-linux-uclibcgnueabi/buildtools --with-cloog=/home/lijiqi/crossng/xq/.build/arm-xiaomi-linux-uclibcgnueabi/buildtools --with-libelf=/home/lijiqi/crossng/xq/.build/arm-xiaomi-linux-uclibcgnueabi/buildtools --with-host-libstdcxx='-static-libgcc -Wl,-Bstatic,-lstdc++,-Bdynamic -lm' --enable-threads=posix --enable-target-optspace --disable-multilib --with-local-prefix=/home/lijiqi/x-tools/arm-xiaomi-linux-uclibcgnueabi/arm-xiaomi-linux-uclibcgnueabi/sysroot --enable-c99 --enable-long-long
+
+
+Thread model: posix
+
+
+gcc version 4.8.2 20130603 (prerelease) (crosstool-NG 1.19.0)
+
+
+===========================================================================
+
+
+http://releases.linaro.org/13.06/components/toolchain/gcc-linaro/4.8/gcc-linaro-4.8-2013.06.tar.bz2
+http://crosstool-ng.org/download/crosstool-ng/crosstool-ng-1.19.0.tar.bz2
+
+
+
+$ /opt/arm-xiaomi-linux-uclibcgnueabi/bin/arm-xiaomi-linux-uclibcgnueabi-gcc -v
+Using built-in specs.
+COLLECT_GCC=/opt/arm-xiaomi-linux-uclibcgnueabi/bin/arm-xiaomi-linux-uclibcgnueabi-gcc
+COLLECT_LTO_WRAPPER=/opt/arm-xiaomi-linux-uclibcgnueabi/bin/../libexec/gcc/arm-xiaomi-linux-uclibcgnueabi/4.8.2/lto-wrapper
+Target: arm-xiaomi-linux-uclibcgnueabi
+Configured with: /home/lijiqi/crossng/xq/.build/src/gcc-linaro-4.8-2013.06-1/configure --build=i686-build_pc-linux-gnu --host=i686-build_pc-linux-gnu --target=arm-xiaomi-linux-uclibcgnueabi --prefix=/home/lijiqi/x-tools/arm-xiaomi-linux-uclibcgnueabi --with-sysroot=/home/lijiqi/x-tools/arm-xiaomi-linux-uclibcgnueabi/arm-xiaomi-linux-uclibcgnueabi/sysroot --enable-languages=c,c++ --with-arch=armv7-a --with-cpu=cortex-a9 --with-tune=cortex-a9 --with-float=soft --with-pkgversion='crosstool-NG 1.19.0' --enable-__cxa_atexit --disable-libmudflap --disable-libgomp --disable-libssp --disable-libquadmath --disable-libquadmath-support --with-gmp=/home/lijiqi/crossng/xq/.build/arm-xiaomi-linux-uclibcgnueabi/buildtools --with-mpfr=/home/lijiqi/crossng/xq/.build/arm-xiaomi-linux-uclibcgnueabi/buildtools --with-mpc=/home/lijiqi/crossng/xq/.build/arm-xiaomi-linux-uclibcgnueabi/buildtools --with-isl=/home/lijiqi/crossng/xq/.build/arm-xiaomi-linux-uclibcgnueabi/buildtools --with-cloog=/home/lijiqi/crossng/xq/.build/arm-xiaomi-linux-uclibcgnueabi/buildtools --with-libelf=/home/lijiqi/crossng/xq/.build/arm-xiaomi-linux-uclibcgnueabi/buildtools --with-host-libstdcxx='-static-libgcc -Wl,-Bstatic,-lstdc++,-Bdynamic -lm' --enable-threads=posix --enable-target-optspace --disable-multilib --with-local-prefix=/home/lijiqi/x-tools/arm-xiaomi-linux-uclibcgnueabi/arm-xiaomi-linux-uclibcgnueabi/sysroot --enable-c99 --enable-long-long
+Thread model: posix
+gcc version 4.8.2 20130603 (prerelease) (crosstool-NG 1.19.0)
+
+
+$ /opt/arm-xiaomi-linux-uclibcgnueabi/arm-xiaomi-linux-uclibcgnueabi/bin/gcc -v
+Using built-in specs.
+COLLECT_GCC=/opt/arm-xiaomi-linux-uclibcgnueabi/arm-xiaomi-linux-uclibcgnueabi/bin/gcc
+Target: arm-xiaomi-linux-uclibcgnueabi
+Configured with: /home/lijiqi/crossng/xq/.build/src/gcc-linaro-4.8-2013.06-1/configure --build=i686-build_pc-linux-gnu --host=i686-build_pc-linux-gnu --target=arm-xiaomi-linux-uclibcgnueabi --prefix=/home/lijiqi/x-tools/arm-xiaomi-linux-uclibcgnueabi --with-sysroot=/home/lijiqi/x-tools/arm-xiaomi-linux-uclibcgnueabi/arm-xiaomi-linux-uclibcgnueabi/sysroot --enable-languages=c,c++ --with-arch=armv7-a --with-cpu=cortex-a9 --with-tune=cortex-a9 --with-float=soft --with-pkgversion='crosstool-NG 1.19.0' --enable-__cxa_atexit --disable-libmudflap --disable-libgomp --disable-libssp --disable-libquadmath --disable-libquadmath-support --with-gmp=/home/lijiqi/crossng/xq/.build/arm-xiaomi-linux-uclibcgnueabi/buildtools --with-mpfr=/home/lijiqi/crossng/xq/.build/arm-xiaomi-linux-uclibcgnueabi/buildtools --with-mpc=/home/lijiqi/crossng/xq/.build/arm-xiaomi-linux-uclibcgnueabi/buildtools --with-isl=/home/lijiqi/crossng/xq/.build/arm-xiaomi-linux-uclibcgnueabi/buildtools --with-cloog=/home/lijiqi/crossng/xq/.build/arm-xiaomi-linux-uclibcgnueabi/buildtools --with-libelf=/home/lijiqi/crossng/xq/.build/arm-xiaomi-linux-uclibcgnueabi/buildtools --with-host-libstdcxx='-static-libgcc -Wl,-Bstatic,-lstdc++,-Bdynamic -lm' --enable-threads=posix --enable-target-optspace --disable-multilib --with-local-prefix=/home/lijiqi/x-tools/arm-xiaomi-linux-uclibcgnueabi/arm-xiaomi-linux-uclibcgnueabi/sysroot --enable-c99 --enable-long-long
+Thread model: posix
+gcc version 4.8.2 20130603 (prerelease) (crosstool-NG 1.19.0)
+
+
+
+mljack@mljack-VirtualBox:/$ arm-xiaomi-linux-uclibcgnueabi-gdb --help
+arm-xiaomi-linux-uclibcgnueabi-gdb: error while loading shared libraries: libexpat.so.0: cannot open shared object file: No such file or directory
+
+
+
+
+=====================================================================
+cd ~/openwrt/xiaomi/cross-compile/native-toolchain
+cp /mnt/share/crosstool-ng-1.19.0.tar.bz2 .
+tar jxf crosstool-ng-1.19.0.tar.bz2
+cd crosstool-ng-1.19.0
+
+sudo apt-get install gperf
+sudo apt-get install libtool
+
+./configure --prefix=/opt
+make -j 4
+sudo make install
+sudo cp ct-ng.comp /etc/bash_completion.d/
+
+vim ~/.profile
+	export PATH=$PATH:/opt/arm-xiaomi-linux-uclibcgnueabi/bin:/opt/bin
+
+
+
+===================
+ct-ng menuconfig
+
+(4) Number of parallel jobs
+
+Target Architecture (arm)
+(armv7-a) Architecture level
+(cortex-a9) Emit assembly for CPU
+(cortex-a9) Tune for CPU
+Floating point: (software (no FPU))
+
+(xiaomi) Tuple's vendor string
+
+Target OS (linux)
+Linux kernel version (2.6.36.4)
+
+binutils version (2.22)
+
+[*]Show Linaro versions
+gcc version (linaro-4.8-2013.06-1)
+[*]C++
+
+C library (uClibc)
+uClibc version (0.9.33.2)
+Threading implementation to use: (nptl)
+
+dmalloc
+duma
+gdb
+ltrace
+strace
+===================
+
+
+root@XiaoQiang:~# uname -r
+2.6.36.4brcmarm
+
+root@XiaoQiang:~# uname -a
+Linux XiaoQiang 2.6.36.4brcmarm #2 SMP PREEMPT Sat Apr 26 03:16:17 CST 2014 armv7l GNU/Linux
+
+root@XiaoQiang:~# cat /proc/version
+Linux version 2.6.36.4brcmarm (szy@shenzhiyong-ct) (gcc version 4.8.2 20130603 (prerelease) (crosstool-NG 1.19.0) ) #2 SMP PREEMPT Sat Apr 26 03:16:17 CST 2014
+
+
+$ arm-xiaomi-linux-uclibcgnueabi-ld -v
+GNU ld (crosstool-NG 1.19.0) 2.22
+
+
+
+--build=i686-build_pc-linux-gnu
+--host=i686-build_pc-linux-gnu
+--target=arm-xiaomi-linux-uclibcgnueabi
+--prefix=/home/lijiqi/x-tools/arm-xiaomi-linux-uclibcgnueabi
+--with-sysroot=/home/lijiqi/x-tools/arm-xiaomi-linux-uclibcgnueabi/arm-xiaomi-linux-uclibcgnueabi/sysroot
+--enable-languages=c,c++
+--with-arch=armv7-a
+--with-cpu=cortex-a9
+--with-tune=cortex-a9
+--with-float=soft
+--with-pkgversion='crosstool-NG 1.19.0'
+--enable-__cxa_atexit
+--disable-libmudflap
+--disable-libgomp
+--disable-libssp
+--disable-libquadmath
+--disable-libquadmath-support
+--with-gmp=/home/lijiqi/crossng/xq/.build/arm-xiaomi-linux-uclibcgnueabi/buildtools
+--with-mpfr=/home/lijiqi/crossng/xq/.build/arm-xiaomi-linux-uclibcgnueabi/buildtools
+--with-mpc=/home/lijiqi/crossng/xq/.build/arm-xiaomi-linux-uclibcgnueabi/buildtools
+--with-isl=/home/lijiqi/crossng/xq/.build/arm-xiaomi-linux-uclibcgnueabi/buildtools
+--with-cloog=/home/lijiqi/crossng/xq/.build/arm-xiaomi-linux-uclibcgnueabi/buildtools
+--with-libelf=/home/lijiqi/crossng/xq/.build/arm-xiaomi-linux-uclibcgnueabi/buildtools
+--with-host-libstdcxx='-static-libgcc -Wl,-Bstatic,-lstdc++,-Bdynamic -lm'
+--enable-threads=posix
+--enable-target-optspace
+--disable-multilib
+--with-local-prefix=/home/lijiqi/x-tools/arm-xiaomi-linux-uclibcgnueabi/arm-xiaomi-linux-uclibcgnueabi/sysroot
+--enable-c99
+--enable-long-long
+
+
+
+=========================================================
+copy config from existing toolchains built by ct-ng
+
+arm-xiaomi-linux-uclibcgnueabi-ct-ng.config > .config
+ct-ng oldconfig
+ct-ng menuconfig
+
+
+───────────────────── Paths and misc options ─────────────────────
+[*] Debug crosstool-NG			(then it's resumable, can't use tee)
+[ ]   Pause between every steps
+[*]   Save intermediate steps
+[*]     gzip saved states
+[*]   Interactive shell on failed commands
+
+
+
+(${CT_TOP_DIR}/build) Working directory
+(/home/mljack/openwrt/xiaomi/cross-compile/native-toolchain/x-tools/${CT_TARGET}) Prefix directory
+
+
+uClibc
+	(xq.config) Configuration file
+		CT_LIBC_UCLIBC_CONFIG_FILE
+			/home/mljack/openwrt/xiaomi/cross-compile/native-toolchain/uClibc-0.9.33.2_mljack.config
+
+ct-ng list-samples
+ct-ng arm-unknown-linux-uclibcgnueabi
+ct-ng menuconfig
+${CT_LIB_DIR}/samples/${CT_TARGET}/${CT_LIBC}-${CT_LIBC_VERSION}.config
+/opt/lib/ct-ng.1.19.0/samples/arm-unknown-linux-uclibcgnueabi/uClibc-0.9.30.2.config
+
+=========================================================
+config uClibc according uClibc_config.h
+
+/opt/arm-xiaomi-linux-uclibcgnueabi/arm-xiaomi-linux-uclibcgnueabi/sysroot/usr/include/bits/uClibc_config.h
+
+wget http://www.uclibc.org/downloads/uClibc-0.9.33.2.tar.xz
+tar xvfJ uClibc-0.9.33.2.tar.xz
+cd uClibc-0.9.33.2
+make menuconfig
+
+Target Architecture (arm)
+
+[*] Build for EABI 
+[ ] Target CPU has a floating point unit (FPU)
+[*] Enable full C99 math library support
+
+/home/mljack/openwrt/xiaomi/cross-compile/native-toolchain/x-tools/arm-xiaomi-linux-uclibcgnueabi/arm-xiaomi-linux-uclibcgnueabi/sysroot/usr/include
+	Linux kernel header location
+
+
+[*]   Dynamic linker stand-alone mode support
+[*]   Dynamic linker prelink support
+Thread support (Native POSIX Threading (NPTL))
+[*] Build pthreads debugging support
+[*] Enable SuSv3 LEGACY functions
+[*] Enable SuSv3 LEGACY macros
+[*] Enable SuSv4 LEGACY or obsolescent functions
+[*] Support for program_invocation_name 
+[*] Provide libutil library and functions
+
+[*]   IP version 6 support
+all in Networking Support
+
+[*] Wide Character Support
+[*] Locale Support
+[*] Extended Locale Support (experimental/incomplete)
+
+
+[*] Support the wordexp() interface
+[*] Support the nftw() interface
+[*] Support the ftw() interface (SUSv4-obsolete)
+[*] Support the fts() interface (bsd-compat)
+[*]   Support gnu glob() interface
+[*] utmpx based support for tracking login/logouts to/from the system   
+all enabled in "Big and Tall"
+
+(/) uClibc runtime library directory
+(/usr/) uClibc development environment directory
+(lib) library path component (NEW)
+[*] Hardwire absolute paths into linker scripts (NEW) 
+
+
+[ ] Strip libraries and executables
+[*] Add support for application self-debugging
+(-Wall -pipe) Compiler Warnings
+
+cp .config ../uClibc-0.9.33.2_mljack.config
+
+====================================================
+
+ct-ng build | tee build.log
+
+
+[ERROR]    configure: error: expat is missing or unusable
+[ERROR]    make[2]: *** [configure-gdb] Error 1
+[ALL  ]    make[2]: Leaving directory `/home/mljack/openwrt/xiaomi/cross-compile/native-toolchain/work/build/arm-xiaomi-linux-uclibcgnueabi/build/build-gdb-cross'
+[ERROR]    make[1]: *** [all] Error 2
+[ALL  ]    make[1]: Leaving directory `/home/mljack/openwrt/xiaomi/cross-compile/native-toolchain/work/build/arm-xiaomi-linux-uclibcgnueabi/build/build-gdb-cross'
+[ERROR]
+[ERROR]  >>
+[ERROR]  >>  Build failed in step 'Installing cross-gdb'
+[ERROR]  >>        called in step '(top-level)'
+[ERROR]  >>
+[ERROR]  >>  Error happened in: CT_DoExecLog[scripts/functions@257]
+[ERROR]  >>        called from: do_debug_gdb_build[scripts/build/debug/300-gdb.sh@170]
+[ERROR]  >>        called from: do_debug[scripts/build/debug.sh@35]
+[ERROR]  >>        called from: main[scripts/crosstool-NG.sh@632]
+[ERROR]  >>
+[ERROR]  >>  For more info on this error, look at the file: 'build.log'
+[ERROR]  >>  There is a list of known issues, some with workarounds, in:
+[ERROR]  >>      '/opt/share/doc/crosstool-ng/ct-ng.1.19.0/B - Known issues.txt'
+
+
+ct-ng list-steps
+ct-ng build debug+
+expat_2.0.1-7.2ubuntu1_i386.deb
+
+
+
+
+
+$sudo apt-get install libexpat1-dev
+
+The following packages have unmet dependencies:
+ libexpat1-dev : Depends: libexpat1 (= 2.0.1-7.2ubuntu1) but 2.0.1-7.2ubuntu1.1 is to be installed
+
+sudo aptitude install libexpat1=2.0.1-7.2ubuntu1.1
+
+
+
+mljack@mljack-VirtualBox:~/openwrt/xiaomi/cross-compile/native-toolchain/work$ sudo aptitude search libexpat
+v   libexpat-dev                    -
+p   libexpat-gst                    - Expat bindings for GNU Smalltalk
+p   libexpat-ocaml                  - OCaml expat bindings
+v   libexpat-ocaml-13g93            -
+p   libexpat-ocaml-dev              - OCaml expat bindings
+v   libexpat-ocaml-dev-13g93        -
+i   libexpat1                       - XML parsing C library - runtime library
+p   libexpat1-dev                   - XML parsing C library - development kit
+
+sudo aptitude install libexpat1-dev
+	ubuntu-12-04
+	downgrade
+
+then wait about 5 hours(with a VM using 4 cores)
+	all passed!
+		see myBuild.log
+	basic hello world works!!!
+
+=========================== downgrade log ============================
+
+mljack@mljack-VirtualBox:~/openwrt/xiaomi/cross-compile/native-toolchain/work$ sudo aptitude install libexpat1-dev
+The following NEW packages will be installed:
+  libexpat1-dev{b}
+0 packages upgraded, 1 newly installed, 0 to remove and 0 not upgraded.
+Need to get 207 kB of archives. After unpacking 653 kB will be used.
+The following packages have unmet dependencies:
+ libexpat1-dev : Depends: libexpat1 (= 2.0.1-7.2ubuntu1) but 2.0.1-7.2ubuntu1.1 is installed.
+The following actions will resolve these dependencies:
+
+     Keep the following packages at their current version:
+1)     libexpat1-dev [Not Installed]
+
+
+
+Accept this solution? [Y/n/q/?] n
+The following actions will resolve these dependencies:
+
+     Downgrade the following packages:
+1)     libexpat1 [2.0.1-7.2ubuntu1.1 (now) -> 2.0.1-7.2ubuntu1 (precise)]
+
+
+
+Accept this solution? [Y/n/q/?] Y
+The following packages will be DOWNGRADED:
+  libexpat1
+The following NEW packages will be installed:
+  libexpat1-dev
+0 packages upgraded, 1 newly installed, 1 downgraded, 0 to remove and 0 not upgraded.
+Need to get 337 kB of archives. After unpacking 653 kB will be used.
+Do you want to continue? [Y/n/?] Y
+Get: 1 http://cn.archive.ubuntu.com/ubuntu/ precise/main libexpat1 i386 2.0.1-7.2ubuntu1 [130 kB]
+Get: 2 http://cn.archive.ubuntu.com/ubuntu/ precise/main libexpat1-dev i386 2.0.1-7.2ubuntu1 [207 kB]
+Fetched 337 kB in 14s (24.0 kB/s)
+dpkg: warning: downgrading libexpat1 from 2.0.1-7.2ubuntu1.1 to 2.0.1-7.2ubuntu1.
+(Reading database ... 150765 files and directories currently installed.)
+Preparing to replace libexpat1 2.0.1-7.2ubuntu1.1 (using .../libexpat1_2.0.1-7.2ubuntu1_i386.deb) ...
+Unpacking replacement libexpat1 ...
+Selecting previously unselected package libexpat1-dev.
+Unpacking libexpat1-dev (from .../libexpat1-dev_2.0.1-7.2ubuntu1_i386.deb) ...
+Processing triggers for doc-base ...
+Processing 1 added doc-base file...
+Setting up libexpat1 (2.0.1-7.2ubuntu1) ...
+Setting up libexpat1-dev (2.0.1-7.2ubuntu1) ...
+Processing triggers for libc-bin ...
+ldconfig deferred processing now taking place
+
+=================================================================================
+
+cross-gdb can't be native gdb...
+
+
+make
+wget http://ftp.gnu.org/gnu/make/make-3.82.tar.gz
+./configure  --host=arm-xiaomi-linux-uclibcgnueabi --prefix=/home/mljack/openwrt/xiaomi/cross-compile/install/make
+make -j 4
+make install
+
+
+export ML=/userdisk/data/manual_install
+export PYTHONHOME=$ML/Python-2.7.3/python
+export PATH=$PATH:$PYTHONHOME/bin:$ML:$ML/hdparm/sbin:
+export PATH=$PATH:$ML/arm-xiaomi-linux-uclibcgnueabi/bin:$ML/make/bin
+export PATH=$PATH:$ML/arm-xiaomi-linux-uclibcgnueabi/arm-xiaomi-linux-uclibcgnueabi/bin
+export PATH=$PATH:$ML/arm-xiaomi-linux-uclibcgnueabi/libexec/gcc/arm-xiaomi-linux-uclibcgnueabi/4.8.2
+export LD_LIBRARY_PATH=$ML/openssl/lib:$ML/zlib/lib:$ML/libffi/lib:$ML/libev/lib
+
+
+
+build gdb-7.4.1 in xiaomi router
+./configure --host=arm-xiaomi-linux-uclibcgnueabi --prefix=/userdisk/data/workspace/gdb-install
+
+it needs a lot of libraries
+	mpc, mpfr, gmp, ppl, cloog, ...
+	sysroot

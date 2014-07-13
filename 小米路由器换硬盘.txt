@@ -1,0 +1,13 @@
+小米路由器换硬盘：
+需要一个U盘和一个2.5寸笔记本硬盘。硬盘装上后先不要接通电源！具体步骤参考以下教程。
+我最近用过的固件版本是 开发版 0.9.8 和 0.9.100。重刷时尽量使用比较新的相近版本。
+
+U盘刷机换硬盘重刷系统
+http://bbs.xiaomi.cn/thread-9683979-1-1.html
+http://www.miui.com/thread-1822395-1-1.html
+http://bbs.xiaomi.cn/thread-9709093-1-1.html
+http://bbs.xiaomi.cn/thread-10159544-1-1.html
+
+小米路由器固件下载地址
+http://www.iptvfans.cn/wiki/index.php/小米路由器固件下载
+http://www.miui.com/thread-1776173-1-1.html
